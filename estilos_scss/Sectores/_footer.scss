@@ -1,0 +1,38 @@
+/* Footer */
+
+$espacio: 1vh;
+
+footer { 
+    background-color: black;
+    box-shadow: 0 50vh 0 50vh #000;
+
+    height: 180px;
+
+    ul {
+        margin-left: $espacio;
+
+        padding-top: $espacio;
+    }
+}
+
+/* Estas clases fueron hechas así porque al mismo tiempo coexisten con la clase de la página vacía, también porque no quería hacer más lío. */
+
+.tituloFooter{ 
+    text-decoration-style: solid;
+    font-size: 22px;
+    font-family: 'Fredoka One', Verdana, sans-serif;
+}
+
+.piePagina{
+    list-style-type: none;
+
+    span{
+        color: white;
+        font-size: 20px;
+    }
+
+    li {
+        font-style: italic;
+        margin-left: 10px;
+    }
+}

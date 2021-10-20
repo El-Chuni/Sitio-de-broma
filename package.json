@@ -1,0 +1,17 @@
+{
+  "name": "pagina-de-broma",
+  "version": "1.0.0",
+  "description": "Un sitio web que se basa en múltiples chistes sobre como se puede usar ciertas herramientas como flexbox, el display, etc y el como muchos sitios web se parecen visualmente",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss estilos_scss/estilos.scss estilos/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hernán Diaz Arroyuelo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

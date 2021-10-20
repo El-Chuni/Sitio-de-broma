@@ -1,0 +1,15 @@
+/* Clases exclusivas de la página vacía */
+
+.paginaVaciaMoment {
+    color: rgb(0, 0, 0);
+    background-color: black;
+
+    /*Para neutralizar el aspecto del link, tengo que hacerle un hijo a la clase con el color de nuevo para que <a> no sobreescriba lo que quiero*/
+    li {
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+    }
+    
+}

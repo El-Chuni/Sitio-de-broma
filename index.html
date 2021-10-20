@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este lugar no es más que un vertedero de chistes malos tras otro, conocé nuestra galería... si querés.">
+    <meta name="keywords" content="HTML, ASP, JS, HUMOR, CHISTE, MEMES, BROMA, PARODIA, GALERÍA, YOUTUBE"> 
+
+    <!--No se me ocurrió algo mejor.-->
+    <title>Un sitio generico.</title>
+
+    <!--Invocación de estilos (incluyendo fuentes de texto de Google)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    
+    <!--Invocación de Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <!--"Logo" del sitio, en realidad sirve de decoración para el titulo.-->
+        <img src="./multimedia/Daco_5587835.png" alt="wow" width="130" height="130">
+
+        <!--El titulo del sitio, decidí conservarlo en ciertas páginas porque su presencia en otras disminuiría la gracia de estas.-->   
+        <a href="index.html"><h1>WOW!</h1><h2 id="subtituloGenerico">Un sitio genérico.</h2></a>
+    </header>
+
+    <!--Menú para ir a otras partes del sitio web.-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto justify-content-center">
+            
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">La página principal de este calvario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Este botón no sirve</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./seccion/_.html">Absolutamente nada</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./seccion/curiosidad.html">No abrir</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./seccion/contacto.html">Contacto (No atendemos)</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./seccion/criminal.html">La mascota del sitio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./seccion/parteSeria.html">Sobre el sitio:</a>
+                </li>
+
+          </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!--Imagenes transparentes, no se ve nada pero hay algo.-->
+        <section class="container my-2 px-5 border border-secondary rounded">
+            <div class="row py-2">
+                <div class="col-md-6 col-sm-12">
+                    <span class="pl-5">Arte:</span>
+                    <img src="./multimedia/Blank_Canvas_on_Transparent_Background.png" alt="Nada" class="row img-fluid">
+                </div>    
+                
+                <div class="col-md-6 col-sm-12">
+                    <span class="pl-5">Más arte:</span>
+                    <img src="./multimedia/Blank_Canvas_on_Transparent_Background.png" alt="Nada" class="row img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!--Un vídeo que literalmente son horas de pantalla blanca, lo de "piola" es sarcasmo.-->
+        <section class="galeria my-2 mx-4">
+            <div>
+                <div class="miniTitulo">Un video piola que me encontré:</div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ohpHY8m54Hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--Un carrusel modificado para que pase el mismo caballo de calecita todo el rato, solo para mostrar que se puede hacer cuando modificas una función de bootstrap-->
+        <section class="container my-2 px-5 border border-secondary rounded">
+            <div class="py-2">
+                <span class="text-center">Mira que tan rápido va el caballito: </span>
+                <div class="carousel slide" data-ride="carousel" data-interval="10">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./multimedia/caballito.png" alt="caballo">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./multimedia/caballito.png" alt="caballo">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./multimedia/caballito.png" alt="caballo">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>    
+
+    <!--Una advertencia por si las moscas.-->
+    <h5 class="advertenciaSitioWeb">Si lees esto, por favor entendé que esta página es una sátira.</h5>
+
+    <!--El pie de la página con los links a las otras partes-->
+    <footer>
+        <ul class="piePagina">
+            <span class="tituloFooter">Direcciones obligatorias que me pidieron de tarea:</span>
+            <li><a href="index.html">La cara del sitio (Guapisima)</a></li>
+            <li><a href="./seccion/_.html">Nada</a></li>
+            <li><a href="./seccion/curiosidad.html">La curiosidad mató al gato</a></li>
+            <li><a href="./seccion/contacto.html">El contacto inutil que tenemos</a></li>
+            <li><a href="./seccion/criminal.html">Conoce a ÉL</a></li>
+            <li><a href="./seccion/parteSeria.html">Sobre el sitio...</a></li>
+        </ul>
+    </footer>
+
+    <!--El script necesario para varias funciones de bootstrap ya que requieren javascript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

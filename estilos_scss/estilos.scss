@@ -1,0 +1,119 @@
+@import "./Base/body";
+@import "./Sectores/header";
+@import "./Sectores/nav";
+@import "./Sectores/footer";
+@import "./Ajustes/bootstrap";
+@import "./Paginas/index";
+@import "./Paginas/paginaVacia";
+@import "./Paginas/contacto";
+@import "./Paginas/curiosidad";
+@import "./Paginas/criminal";
+
+/* ============ Modificaciones genericas ============ */
+
+#subtituloGenerico { /* Para alinear directamente el texto */
+    text-align: center;
+}
+
+.miniTitulo { /* Solo por si no quiero usar un Hnumero */
+    color: black;
+    font-size: 22px;
+}
+
+/* ====== Ajustes de media (Para mobile first) ====== */
+
+@mixin media($ancho) {
+    @media only screen and (max-width: $ancho) {
+        @content;
+    }
+}
+
+@include media(425px){
+    header {
+
+        a {
+            position: static;
+        }
+
+        img {
+            opacity: 0;
+        }
+    }
+
+    #laEjecucion__aplanadora {
+        width: 100%;
+        left: 0;
+    }
+
+    .galeria {
+        flex-direction: column;
+        
+        justify-items: center;
+
+        div {
+            iframe {
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    .miniTitulo {
+        font-size: 16px;
+    }
+
+    .piePagina{
+        span{
+            font-size: 16px;
+        }
+    }
+
+}
+
+@include media(768px){
+    #laEjecucion__aplanadora {
+        height: 25%;
+    }
+
+    #encuesta {
+        font-size: 12px;
+    }
+    
+    .galeria {
+        flex: 1 1 auto;
+        overflow-x: auto;
+        padding: 0;
+
+        div {
+            width: fit-content;
+    
+            img {
+                width: 100%;
+            }
+            
+        }
+
+    }
+
+    #perfilDelGato{
+        grid-template-columns: 65% 20vh;
+
+        &__imgGato {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        &__ulGato {
+            font-size: 70%;
+        
+            max-width: 100%;
+            max-height: 90%;
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+    }
+
+}

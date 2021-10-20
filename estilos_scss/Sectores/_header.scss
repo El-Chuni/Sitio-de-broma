@@ -1,0 +1,31 @@
+/* Header */
+
+header { /* Acá ajusto las posiciones de cada objeto en el header y la fuente del titulo */
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 86%, rgba(0,0,0,0.39119397759103647) 100%);
+
+    img{
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    a {
+        h1{
+            color: crimson;
+    
+            text-align: center;
+            font-size: 60px;
+
+            margin: 16px;
+
+            transform: rotate(-15deg);
+        }
+    }
+}

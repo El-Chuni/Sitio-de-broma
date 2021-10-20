@@ -1,0 +1,15 @@
+/* Body con la base de su tipografía fuera del Bootstrap*/
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body { /* Desde acá ya le doy color al fondo y una fuente a las letras */
+    background-color: rgb(220, 220, 220);
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Fredoka One', Verdana, sans-serif;
+    }
+}

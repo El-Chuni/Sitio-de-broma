@@ -1,0 +1,16 @@
+/* Ajustes de varias cosas de la biblioteca de Bootstrap */
+
+.bg-dark {
+    background-color: black!important;
+}
+
+.nav-link {
+    font-family: 'Fredoka One', Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.carousel-item { /*Le acelero la velocidad al carrusel */
+    transition: -webkit-transform .06s ease;
+    transition: transform .06s ease;
+    transition: transform .06s ease,-webkit-transform .06s ease;
+}

@@ -1,0 +1,69 @@
+/* Clases e IDs exclusivas de la página del muro de crimenes de mi gato */
+
+@mixin gridCriminal {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "img ul";
+    grid-template-rows: 2vh 50vh;
+    grid-template-columns: 60vh 25vh;
+}
+
+#perfilDelGato{ /* La exposición del gato en sí usando el grid, se hizo a partir del desafío que pedía el mismo */
+    margin: 10vh;
+
+    @include gridCriminal;
+
+    align-items: center;
+    justify-content: space-around;
+
+    &__tituloGato{
+        background: rgb(147,88,1);
+        background: linear-gradient(90deg, rgba(147,88,1,1) 0%, rgba(173,133,75,1) 28%, rgba(161,145,122,1) 70%, rgba(64,59,51,1) 100%);
+    
+        width: 100%;
+    
+        text-align: center;
+        -webkit-text-stroke: 1px white;
+    }
+    
+    &__headerGato {
+        grid-area: header;
+    
+        margin-bottom: 5px;
+    
+        border: 2px groove black;
+
+        div {
+            font-size: 3vh;
+        }
+
+    }
+    
+    &__imgGato {
+        grid-area: img;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+    
+        transform: skew(1deg, 2deg);
+    
+        border: 1px solid black;
+    }
+    
+    &__ulGato {
+        grid-area: ul;
+        font-size: 80%;
+    
+        max-width: 100%;
+        max-height: 100%;
+    
+        padding: 17px;
+        border: 1px solid black;
+    }
+    
+    img {
+        object-fit: contain;
+    }
+}
+

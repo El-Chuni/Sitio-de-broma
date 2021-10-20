@@ -1,0 +1,36 @@
+/* Clases e IDs exclusivas de la página de la muerte del gato */
+
+#laEjecucion { /* Estos 3 dan forma al chiste de la página */
+    &__aplanadora{ /* Usando la posición arreglada, hago que la aplanadora se mantenga en pantalla para aplastar al gato */
+        position: fixed;
+        top: 30px;
+        left: 35%;
+    
+        width: 400px;
+        height: 200px;
+    
+        z-index: 5;
+    }
+    
+    &__pobreGatito{
+        position: relative;
+        top: 300px;
+        left: 50%;
+        
+        width: 100px;
+        height: 70px;
+    }
+    
+    &__gatitoNo{ 
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    
+        width: 190px;
+        height: 90px;
+    }
+}
+
+#footerCuriosidad { /* Haciendo esto, fuerzo a que sea obligatorio bajar por la página de cualquier PC para llegar al footer */
+    margin-top: 100vh;
+}
