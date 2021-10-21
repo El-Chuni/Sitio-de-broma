@@ -25,3 +25,13 @@
     right: 0;
     bottom: 0;
 }
+
+/* Quería añadirle un easter egg para quienes les guste examinar a fondo la página, ahora lo estás viendo. */
+.separadorMisterioso {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 6px;
+    width: 90%;
+}
