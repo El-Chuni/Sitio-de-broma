@@ -7,7 +7,8 @@
 
 body {
   /* Desde acá ya le doy color al fondo y una fuente a las letras */
-  background-color: gainsboro; }
+  background-color: gainsboro;
+  overflow-x: hidden; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'Fredoka One', Verdana, sans-serif; }
 
@@ -94,7 +95,8 @@ footer {
   -webkit-text-stroke: 1px white;
   position: fixed;
   right: 0;
-  bottom: 0; }
+  top: 0;
+  font-size: 70%; }
 
 /* Quería añadirle un easter egg para quienes les guste examinar a fondo la página, ahora lo estás viendo. */
 .separadorMisterioso {
@@ -227,6 +229,15 @@ footer {
     max-height: 100%;
     transform: skew(1deg, 2deg);
     border: 1px solid black; }
+  #perfilDelGato__imgGatoMobile {
+    display: block;
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: skew(1deg, 2deg);
+    border: 1px solid black; }
   #perfilDelGato__ulGato {
     grid-area: ul;
     font-size: 80%;
@@ -248,6 +259,41 @@ footer {
   font-size: 22px; }
 
 /* ====== Ajustes de media (Para mobile first) ====== */
+@media only screen and (max-width: 768px) {
+  #laEjecucion__aplanadora {
+    height: 25%; }
+  #encuesta {
+    font-size: 12px; }
+  .galeria {
+    flex: 1 1 auto;
+    overflow-x: auto;
+    padding: 0; }
+    .galeria div {
+      width: fit-content; }
+      .galeria div img {
+        width: 100%; }
+  #perfilDelGato {
+    grid-template-columns: 0 115%;
+    margin: 10vh 10vh 0vh 10vh; }
+    #perfilDelGato__imgGato {
+      display: none; }
+    #perfilDelGato__imgGatoMobile {
+      visibility: visible;
+      max-width: 75%;
+      max-height: 75%;
+      margin-bottom: 30px; }
+    #perfilDelGato__ulGato {
+      display: flex;
+      object-fit: cover;
+      font-size: 80%;
+      max-width: 90vh;
+      max-height: 90%;
+      justify-content: space-around; }
+      #perfilDelGato__ulGato ul {
+        flex-direction: column; }
+    #perfilDelGato img {
+      object-fit: contain; } }
+
 @media only screen and (max-width: 425px) {
   header a {
     position: static; }
@@ -264,29 +310,10 @@ footer {
   .miniTitulo {
     font-size: 16px; }
   .piePagina span {
-    font-size: 16px; } }
-
-@media only screen and (max-width: 768px) {
-  #laEjecucion__aplanadora {
-    height: 25%; }
-  #encuesta {
-    font-size: 12px; }
-  .galeria {
-    flex: 1 1 auto;
-    overflow-x: auto;
-    padding: 0; }
-    .galeria div {
-      width: fit-content; }
-      .galeria div img {
-        width: 100%; }
+    font-size: 75%; }
+  .piePagina li {
+    font-size: 75%; }
   #perfilDelGato {
-    grid-template-columns: 65% 20vh; }
-    #perfilDelGato__imgGato {
-      max-width: 100%;
-      max-height: 100%; }
+    grid-template-columns: 0 155%; }
     #perfilDelGato__ulGato {
-      font-size: 70%;
-      max-width: 100%;
-      max-height: 90%; }
-    #perfilDelGato img {
-      object-fit: contain; } }
+      font-size: 70%; } }

@@ -28,6 +28,74 @@
     }
 }
 
+@include media(768px){
+    #laEjecucion__aplanadora {
+        height: 25%;
+    }
+
+    #encuesta {
+        font-size: 12px;
+    }
+    
+    .galeria {
+        flex: 1 1 auto;
+        overflow-x: auto;
+        padding: 0;
+
+        div {
+            width: fit-content;
+    
+            img {
+                width: 100%;
+            }
+            
+        }
+
+    }
+
+    #perfilDelGato{
+        grid-template-columns: 0 115%;
+
+        margin: 10vh 10vh 0vh 10vh;
+
+        &__imgGato {
+            display: none;
+        }
+        
+        &__imgGatoMobile {
+            visibility: visible;
+    
+            max-width: 75%;
+            max-height: 75%;
+
+            margin-bottom: 30px;
+        }
+
+        &__ulGato {
+            display: flex;
+
+            object-fit: cover;
+
+            font-size: 80%;
+        
+            max-width: 90vh;
+            max-height: 90%;
+
+            justify-content: space-around;
+
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+    }
+
+}
+
 @include media(425px){
     header {
 
@@ -64,56 +132,19 @@
 
     .piePagina{
         span{
-            font-size: 16px;
+            font-size: 75%;
+        }
+
+        li{
+            font-size: 75%;
         }
     }
 
-}
+    #perfilDelGato {
+        grid-template-columns: 0 155%;
 
-@include media(768px){
-    #laEjecucion__aplanadora {
-        height: 25%;
-    }
-
-    #encuesta {
-        font-size: 12px;
-    }
-    
-    .galeria {
-        flex: 1 1 auto;
-        overflow-x: auto;
-        padding: 0;
-
-        div {
-            width: fit-content;
-    
-            img {
-                width: 100%;
-            }
-            
-        }
-
-    }
-
-    #perfilDelGato{
-        grid-template-columns: 65% 20vh;
-
-        &__imgGato {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        
         &__ulGato {
             font-size: 70%;
-        
-            max-width: 100%;
-            max-height: 90%;
         }
-
-        img {
-            object-fit: contain;
-        }
-
     }
-
 }
