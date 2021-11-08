@@ -1,0 +1,28 @@
+/*ID exclusiva de la página de la busqueda del tesoro */
+
+#busquedaDelTesoro { /* Para ocultar el tesoro en el contenedor*/
+    a {
+        visibility: hidden;
+
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 400px;
+
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (width: 1876px) {
+    #busquedaDelTesoro {
+        h2, span, img, strong {
+            visibility: hidden;
+
+            size: 0;
+        }
+
+        a {
+            visibility: visible;
+        }
+    }
+}

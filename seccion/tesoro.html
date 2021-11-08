@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dejame presentarte a mi gato.">
-    <meta name="keywords" content="HTML, ASP, JS, HUMOR, CHISTE, MEMES, BROMA, PARODIA, GATO, CRIMEN, GUERRA"> 
+    <meta name="description" content="Observa la consecuencias de tus actos.">
+    <meta name="keywords" content="HTML, ASP, JS, HUMOR, CHISTE, MEMES, BROMA, PARODIA, ED, EDD, EDDY, ROLF, ERROR, 404"> 
 
-    <title>Nuestro empleado</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
+    <!--Invocación de estilos (incluyendo fuentes de texto de Google)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../estilos/estilos.css">
+
+    <title>La curiosidad mató al gato</title>
 </head>
 <body>
     <header>
@@ -47,7 +44,7 @@
                     <a class="nav-link" href="#">Este botón no sirve</a>
                 </li>
     
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="tesoro.html">Una aventura para PC</a>
                 </li>
     
@@ -59,7 +56,7 @@
                     <a class="nav-link" href="contacto.html">Contacto (No atendemos)</a>
                 </li>
     
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="criminal.html">La mascota del sitio</a>
                 </li>
 
@@ -70,48 +67,26 @@
             </ul>
         </div>
     </nav>
+    
+    <!--Un juego para entretener a los usuarios de PC-->
+    <main class="d-flex flex-column mb-5 px-4 align-items-center" id="busquedaDelTesoro">
+        <h2>¡Bienvenid@ a la busqueda del tesoro!</h2>
 
-    <!--Esta página fue hecha para exponer a un criminal que tengo bajo techo en mi casa-->
-    <main>
-        <section id="perfilDelGato">
-            
-            <header id="perfilDelGato__headerGato">
-                <div id="perfilDelGato__tituloGato">NO CONFIES EN ESTE GATO</div>
-            </header>
+        <span>Las reglas son simples: Si estás en una computadora tenes que hacer click derecho y seleccionar "inspeccionar".</span>
+        <img src="../multimedia/inspeccionar.png" alt="inspeccionar" class="my-2">
+        
+        <span>Ahora selecciona este botón que ves aquí (sin miedo que no muerde)</span>
+        <img src="../multimedia/inspeccionar2.PNG" alt="inspeccionar2" class="my-2">
+        
+        <span>Bien, ahora ves una casilla para tu respuesta.</span>
+        <img src="../multimedia/inspeccionar3.PNG" alt="inspeccionar3" class="my-2">
+        
+        <span>Ahora bien, la pregunta:</span>
+        <strong>¿En que año se inventó el objeto que, en general, podemos llevar a todos lados pero usualmente hay uno conectado a la pared en cada casa?</strong>
+        
+        <img src="../multimedia/guybrushBasado.png" alt="Basado">
 
-            <!--Modificado intencionalmente tanto para un desafío como para un chiste, manteniendo su vitalidad-->
-            <img src="https://pbs.twimg.com/media/EnDOrgiVEAAwqPL?format=jpg&name=medium" alt="la creatura" id="perfilDelGato__imgGato">
-            
-            <ul id="perfilDelGato__ulGato">
-                <ul style="font-family: Roboto;">
-                    <div style="font-weight: bold;">Nombres/Apodos:</div>
-                    <li>Samu</li>
-                    <li>Rolo</li>
-                    <li>"Culo"</li>
-                    <li>Juan Carlos</li>
-                    <li>Miembro del equipo Rocket</li>
-                </ul>
-                <br>
-                <ul style="font-family: Roboto;">
-                    <div style="font-weight: bold;">Lista de crimenes:</div>
-                    <li>Robo a pata armada</li>
-                    <li>Asesinato de sillones</li>
-                    <li>Secuestro</li>
-                    <li>Extorsión</li>
-                    <li>Asalto</li>
-                    <li>No tiró el botón del inodoro</li>
-                    <li>Modificación ilegal de imagenes como esta</li>
-                    <li>Invasión a la privacidad ajena</li>
-                </ul>
-            </ul>
-
-        </section>
-
-        <!--Para la versión mobile-->
-        <div>
-            <img src="https://pbs.twimg.com/media/EnDOrgiVEAAwqPL?format=jpg&name=medium" alt="la creatura" id="perfilDelGato__imgGatoMobile">
-        </div>
-
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">¡Buen trabajo! Ahora clickeame para abrir el tesoro.</a>
     </main>
 
     <!--El pie de la página con los links a las otras partes-->
@@ -126,10 +101,5 @@
             <li><a href="parteSeria.html">Sobre el sitio...</a></li>
         </ul>
     </footer>
-
-    <!--El script necesario para varias funciones de bootstrap ya que requieren javascript-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

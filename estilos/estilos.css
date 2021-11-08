@@ -106,14 +106,23 @@ footer {
   height: 6px;
   width: 90%; }
 
-/* Clases exclusivas de la página vacía */
-.paginaVaciaMoment {
-  color: black;
-  background-color: black;
-  /*Para neutralizar el aspecto del link, tengo que hacerle un hijo a la clase con el color de nuevo para que <a> no sobreescriba lo que quiero*/ }
-  .paginaVaciaMoment li a {
-    color: black;
-    text-decoration: none; }
+/*ID exclusiva de la página de la busqueda del tesoro */
+#busquedaDelTesoro {
+  /* Para ocultar el tesoro en el contenedor*/ }
+  #busquedaDelTesoro a {
+    visibility: hidden;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 400px;
+    font-size: 2vh; }
+
+@media only screen and (width: 1876px) {
+  #busquedaDelTesoro h2, #busquedaDelTesoro span, #busquedaDelTesoro img, #busquedaDelTesoro strong {
+    visibility: hidden;
+    size: 0; }
+  #busquedaDelTesoro a {
+    visibility: visible; } }
 
 /* Clases e IDs exclusivas del contacto */
 /* La encuesta de la página, acá se tiene los ajustes especificos del mismo */
@@ -240,9 +249,9 @@ footer {
     border: 1px solid black; }
   #perfilDelGato__ulGato {
     grid-area: ul;
-    font-size: 80%;
+    font-size: 75%;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90%;
     padding: 17px;
     border: 1px solid black; }
   #perfilDelGato img {
