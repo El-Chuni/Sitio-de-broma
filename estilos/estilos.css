@@ -183,7 +183,8 @@ footer {
 
 /* Clases e IDs exclusivas de la página de la muerte del gato */
 #laEjecucion {
-  /* Estos 3 dan forma al chiste de la página */ }
+  /* Estos 3 dan forma al chiste de la página */
+  background-image: none; }
   #laEjecucion__aplanadora {
     /* Usando la posición arreglada, hago que la aplanadora se mantenga en pantalla para aplastar al gato */
     position: fixed;
@@ -218,7 +219,11 @@ footer {
   grid-template-rows: 2vh 50vh;
   grid-template-columns: 60vh 25vh;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-image: url("../multimedia/patitas.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
   #perfilDelGato__tituloGato {
     background: #935801;
     background: linear-gradient(90deg, #935801 0%, #ad854b 28%, #a1917a 70%, #403b33 100%);
@@ -256,6 +261,10 @@ footer {
     border: 1px solid black; }
   #perfilDelGato img {
     object-fit: contain; }
+
+/* Id exclusiva de la parte seria (Preguntas y respuestas) */
+#FAQ ul li {
+  margin: 7px 0; }
 
 /* ============ Modificaciones genericas ============ */
 #subtituloGenerico {

@@ -1,6 +1,8 @@
 /* Clases e IDs exclusivas de la página de la muerte del gato */
 
 #laEjecucion { /* Estos 3 dan forma al chiste de la página */
+    background-image: none;
+    
     &__aplanadora{ /* Usando la posición arreglada, hago que la aplanadora se mantenga en pantalla para aplastar al gato */
         position: fixed;
         top: 30px;

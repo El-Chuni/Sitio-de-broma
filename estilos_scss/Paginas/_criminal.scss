@@ -17,6 +17,11 @@
     align-items: center;
     justify-content: space-around;
 
+    background-image: url("../multimedia/patitas.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
     &__tituloGato{
         background: rgb(147,88,1);
         background: linear-gradient(90deg, rgba(147,88,1,1) 0%, rgba(173,133,75,1) 28%, rgba(161,145,122,1) 70%, rgba(64,59,51,1) 100%);
