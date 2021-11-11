@@ -254,7 +254,7 @@ footer {
     border: 1px solid black; }
   #perfilDelGato__ulGato {
     grid-area: ul;
-    font-size: 75%;
+    font-size: 35%;
     max-width: 100%;
     max-height: 90%;
     padding: 17px;
